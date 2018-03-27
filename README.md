@@ -16,3 +16,16 @@ brew install postgresql
 
 
 psql postgres://root:ppppgioassword@34.227.101.103:80/sample -c "SELECT count(id) FROM employees;"
+
+pip install --user pipenv
+pip install pipenv
+mkdir -p code/pgbackup
+cd code/pgbackup
+pipenv install --two
+To activate this project's virtualenv, run the following:
+ $ pipenv shell
+    
+mkdir -p src/pgbackup test docs
+touch src/pgbackup/__init__.py docs/.keep test/.keep
+
+curl https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore -o .gitignore
