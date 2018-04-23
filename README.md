@@ -31,6 +31,8 @@ touch src/pgbackup/__init__.py docs/.keep test/.keep
 curl https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore -o .gitignore
 
 pipenv install --dev pytest
+pipenv install --dev --trusted-host pypi.python.org pytest
+
 
 problem on MACos
 ----------------
