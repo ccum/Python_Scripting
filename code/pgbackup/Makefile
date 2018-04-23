@@ -1,6 +1,7 @@
-PHONY: default
+.PHONY: default
 
-default: test
+default:
+	test
 
 install:
 	pipenv install --dev --skip-lock

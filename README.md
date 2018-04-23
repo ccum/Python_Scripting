@@ -29,3 +29,11 @@ mkdir -p src/pgbackup test docs
 touch src/pgbackup/__init__.py docs/.keep test/.keep
 
 curl https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore -o .gitignore
+
+pipenv install --dev pytest
+
+problem on MACos
+----------------
+
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
