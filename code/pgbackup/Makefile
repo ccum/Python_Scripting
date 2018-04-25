@@ -1,7 +1,7 @@
 .PHONY: default
 
 default:
-	test
+	PYTHONPATH=./src pytest
 
 install:
 	pipenv install --dev --skip-lock

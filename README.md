@@ -39,3 +39,4 @@ problem on MACos
 
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+https://stackoverflow.com/questions/14102416/python-requests-requests-exceptions-sslerror-errno-8-ssl-c504-eof-occurred
