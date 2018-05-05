@@ -15,10 +15,10 @@ cliente : https://www.postgresql.org/download/macosx/
 brew install postgresql
 
 
-psql postgres://root:ppppgioassword@34.227.101.103:80/sample -c "SELECT count(id) FROM employees;"
-
+psql postgres://cecum:password@127.0.0.1:80/sample -c "SELECT count(id) FROM employees;"
+pg_dump postgres://cecum:password@127.0.0.1:80/sample
 pip install --user pipenv
-pip install pipenv
+pip uninstall pipenv
 mkdir -p code/pgbackup
 cd code/pgbackup
 pipenv install --two
@@ -37,6 +37,15 @@ pipenv install --dev --trusted-host pypi.python.org pytest
 problem on MACos
 ----------------
 
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
+    export LANG=en_US.UTF-8
+    export LC_ALL=en_US.UTF-8
 https://stackoverflow.com/questions/14102416/python-requests-requests-exceptions-sslerror-errno-8-ssl-c504-eof-occurred
+
+export SERVER_IP=127.0.0.1
+
+pipenv install --dev pytest-mock
+
+
+
+psql postgres://cecum:password@172.18.0.3:5432/sample -c "SELECT count(id) FROM employees;"
+pg_dump postgres://cecum:password@172.18.0.3:5432/sample

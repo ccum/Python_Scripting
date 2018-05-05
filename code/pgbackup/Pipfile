@@ -5,8 +5,11 @@ name = "pypi"
 
 [dev-packages]
 pytest = "*"
+pytest-mock = "*"
+pip = "*"
 
 [packages]
+pytest-mock = "*"
 
 [requires]
 python_version = "2.7"
