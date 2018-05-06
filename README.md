@@ -49,3 +49,15 @@ pipenv install --dev pytest-mock
 
 psql postgres://cecum:password@172.18.0.3:5432/sample -c "SELECT count(id) FROM employees;"
 pg_dump postgres://cecum:password@172.18.0.3:5432/sample
+
+
+pip install --user awscli
+~/.local/bin/aws --version
+chmod +x ~/.local/bin/aws
+export PATH=~/.local/bin:$PATH
+aws --version
+
+---OTROS-----
+export PATH="$HOME/.local/bin:$PATH"
+pipenv shell --fancy
+---------------
